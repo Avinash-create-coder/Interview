@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "776d5326-b81a-4845-bc74-194437f2b9a2",
+		"name": "Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Avinash\",\"lastName\":\"Narasinga\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"firstName\":\"AvinashPriyanka\",\"lastName\":\"Narasinga\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePersonAddress",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"permanentAddress\":{\"street\":\"ISB Road\",\"city\":\"Hyderabad\",\"state\":\"Telangana\",\"postalCode\":\"502032\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/updatePersonAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"updatePersonAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAddress",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"street\":\"Infosys Road\",\"city\":\"Hyderabad\",\"state\":\"Telangana\",\"postalCode\":\"502032\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/updateAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"updateAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Avinash\",\"lastName\":\"Narasinga\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/getall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"getall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindCount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Avinash\",\"lastName\":\"Narasinga\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/getPersonCount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"getPersonCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePerson",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8102/person/deletePerson/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8102",
+					"path": [
+						"person",
+						"deletePerson",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

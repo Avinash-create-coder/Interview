@@ -1,0 +1,7 @@
+http://localhost:8102/person/create
+http://localhost:8102/person/update
+http://localhost:8102/person/updatePersonAddress
+http://localhost:8102/person/updateAddress
+http://localhost:8102/person/getall
+http://localhost:8102/person/getPersonCount
+http://localhost:8102/person/deletePerson/1
